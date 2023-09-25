@@ -35,7 +35,7 @@ git config --global user.name <name>
 
 - `remote add`
     - `git remote add origin <UrL>`
-    - 원격저장소 주소를 originn 이라는 이름으로 저장
+    - 원격저장소 주소를 origin 이라는 이름으로 저장
 
 - `push`
     - `git push <원격저장소이름> <브랜치이름>`
