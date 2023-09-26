@@ -66,3 +66,4 @@ git config --global user.name <name>
         - `git branch -c <브랜치명>` : branch를 생성하며, 그 branch로 이동 
     - `git switch <브랜치명>` : <브랜치명>으로 이동한다.
     - `git branch -d <브랜치명>` : 해당 branch를 삭제한다.
+        - **주의** : push 할 때, 새 branch 명을 입력한다.
