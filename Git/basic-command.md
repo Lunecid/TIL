@@ -40,3 +40,29 @@ git config --global user.name <name>
 - `push`
     - `git push <원격저장소이름> <브랜치이름>`
     - 원격저장소에 브랜치를 업로드
+
+## Github Page 생성하기
+
+- `github.io` 
+   - https://사용자이름.github.io/저장소이름/ 를 통해 본인의      Github 웹페이지 생성
+
+## 원격저장소에서 불러오기
+
+- `pull`
+    - `git pull <원격저장소이름> <브랜치이름>`
+    - 원격저장소에 저장된 브랜치를 불러오기
+
+## 원격저장소에 있는 타인 코드를 복사하기
+
+- `clone`
+    - `git clone <원격저장소 코드 링크>`
+    - 터미널을 이용하여 현재 파일 위치를 찾아 `git clone <원격저장소 링크>` 를 하여 타인의 코드를 복사
+
+## 새로운 Branch를 생성하기
+
+- `branch`
+    - `git branch` : 현재의 branch를 확인한다.
+    - `git branch <브랜치명>` : 새로운 branch를 생성한다.
+        - `git branch -c <브랜치명>` : branch를 생성하며, 그 branch로 이동 
+    - `git switch <브랜치명>` : <브랜치명>으로 이동한다.
+    - `git branch -d <브랜치명>` : 해당 branch를 삭제한다.
