@@ -53,8 +53,7 @@
     `random`
     - `random.sample(뽑을 범위, 갯수)`
     - `random.choice()`
-- python 내에서 지원하지 않는 도구 사용 : install 후 import 
-    <>
+- python 내에서 지원하지 않는 도구 사용 : install 후 `import <>`
     - ex) `requests`
 
 ## 숫자 단순 나열이 아닌 범위 사용
