@@ -8,3 +8,5 @@
 - Git
 - Linux
 - Markdown
+- Python
+
