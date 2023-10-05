@@ -364,7 +364,7 @@ age = 25
 
 ## 6. 제어문
 
-## 조건문(if문)
+### 조건문(if문)
 
 ```python
 if <조건식>: 
@@ -406,7 +406,7 @@ else:
     print('홀수 입니다.')
 ```
 
-### elif
+#### elif
 
 ```python
 if <조건식>:
@@ -433,5 +433,214 @@ elif score >= 70:
     print('C')
 else:
     print('F')
+```
+
+#### 조건표현식
+
+```python
+true_value if <조건식> else false_value
+
+# ex)
+num = 10
+result = '홀수' if num % 2 == 1 else '짝수'
+print(result)
+```
+
+---
+
+### While 문
+
+```python
+    while <조건식>:
+        실행할 코드
+
+
+# ex)
+greating = ''
+
+while greating != '안녕':
+    greating = input('안녕이라고 말해 : ')
+# 미래가 보장되지 않는 상황에서 사용하는 경우가 잦다.
+```
+
+### for 문
+
+- 정해진 범위 내의 반복
+
+    ```python
+    for variable in sequence:
+        실행할 코드
+
+    # ex)
+    numbers = [1,2,3,4,5]
+
+    for number in numbers:
+    print(number)
+
+    word = input('단어를 입력하세요')
+
+    for char in word:
+    print(char)
+    #문자열도 하나의 시퀀스가 될 수 있다.
+
+    for i in (1,2,3,4,5):
+    print(i)
+
+    # 핵심은 어떤 구조든 반복문 처리를 할 수 있다는 점
+
+    #2. 1~30까지 숫자 중에서 홀수를 모아서 리스트로 출력
+
+    list = []
+    for i in range(31):
+        if i % 2 != 0:
+            # print(i)
+            list.append(i)
+            # x.append(): 내용을 x에 저장한다.
+
+    print(list)
+
+    for item in enumerate(menus):
+    print(item)
+    # enumerate()는 결괏값이 튜플로 출력된다.
+
+    for index,menu in enumerate(menus):
+    print(index,menu)
+    # 튜플로 출력하고 싶지 않을 떄 (x,y)형태로 사용가능하다.
+    ```
+
+### dictionary 반복
+
+1. for key in dict:
+2. for key in dict.keys():
+3. for value in dict.value():
+4. for key, value in dict.item():
+
+
+```python
+# 1.
+blood_type = {
+    'A' : 5,
+    'B' : 4,
+    'O' : 2,
+    'AB' : 3,
+}
+print('혈액형 목록은 다음과 같습니다.')
+for key in blood_type:
+    print(key)
+
+# 2.
+print('혈액형 목록은 다음과 같습니다.')
+for key in blood_type.keys():
+    print(key)
+
+total_value = 0
+
+# keys 뿐만 아니라 values 도 가능
+for value in blood_type.values():
+    total_value += value
+print(f'총인원은 {total_value}명입니다.')
+
+# items 도 가능 
+for key,value in blood_type.items():
+    print(f'{key}형은 {value}명입니다.')
+```
+
+### break, continue
+
+```python
+
+for i in range(100):
+    print(i)
+    if i > 10:
+        print('10넘으면 다메')
+        break
+
+rice = ['보리','보리','보리','보리','보리','보리','보리','쌀','보리','보리',]
+
+for index,key in enumerate(rice):
+    print(key)
+    if key == '쌀':
+        print(f'{index+1}번째만에 쌀 잡았다')
+        break
+     
+```
+
+- continue 
+    : continue 이후의 코드를 실행하지 않고 다음 반복을 실행
+
+```python
+age = [10,20,30,40,33,59]
+
+for a in age:
+    if a <= 20:
+        continue
+    print(f'{a}살은 성인입니다.')
+```
+
+- else 
+    : else문은 끝까지 반복이 진행이 된 후 실행합니다. (break를 만나지 않은 경우)
+
+```python
+
+for i in range(12):
+    print(i)
+    if i > 10:
+        break
+
+else: 
+    print('break 못만남')
+
+numbers = [1,2,3,4,5]
+print(1 in numbers) -> True
+print(99 in numbers) -> False
+
+numbers = [1,2,3,4,5]
+target = 5
+
+for number in numbers:
+    if number == target:
+        print(number)
+        print(number in numbers)
+        break
+
+else:
+    print(f'{target}은/는 numbers에 없습니다.')
+    print(target in numbers)
+   
+    
+```
+
+### True, Pass 문
+
+```python
+def login():
+    pass
+
+def logout():
+    pass
+
+```
+
+### match 문
+
+```python
+
+match value:
+    case 조건:
+        실행할 코드
+    case 조건:
+        실행할 코드 
+    case _:
+        실행할 코드
+
+# ex)
+status = 404
+match status:
+    case 400:
+        print('bad request')
+    case 404:
+        print('not found')
+    case _:
+        print('something is wrong')
 ```
 
