@@ -38,12 +38,19 @@
 ![CSS](https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=650&name=Update%20css%20margin%20vs%20padding-2.png)
 - `border` : 테두리 설정 (border: px,style,color)형태로 사용
     - `border-radius` : 테두리의 가장자리를 둥글게 설정
+    
 - `padding`: 컨텐츠를 제외한 Border까지의 영역 top, bottom 으로 영역 설정
+
 - `margin` : 영역의 여백을 설정하고 싶을 때 사용
+
 - `font-family`: link를 통해 `<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">` 와 같은 형태로 폰트를 외부에서 불러온 후 클래스로 `font-family`를 설정하고 class로 폰트를 설정하면 해당 폰트로 변경 
 - `display` 
+
     -`inline`: `span` 형태와 같은 데이터가 있는 공간만을 차지한다. 
+
     -`block` : 해당 데이터가 block 형태로 출력, 줄바꿈이 무조건 된다
+
     -`none`: 해당 데이터가 출력이 되지 않는다
+
     -`flex` : 데이터의 표시가 가변형이 된다 
 
