@@ -21,8 +21,8 @@ python에서 출력하는 함수는
 ---
 
 [구글](https://google.com)
-![브레머튼](https://i.namu.wiki/i/SfbO4QzGFbdjGoeCQVIOCEBbFLvJbolI7MkUXpUEVgsEaYz_HsSdmUIeeaZbcFTh431f3YCbTYZSnH5ihPJTSg.webp)
-![브레머튼](./assets/bbt.jpeg) // .은 현재 위치
+![홀란드](https://i.namu.wiki/i/nkyyzYnI9mu0oKoO3WshDwLPBRLWPeLAMrqCeTSU9L5mv7AUyWrVKOV_kYsJ0rGCzD6V6w4ox0IMSus8sQ5IBg.webp)
+![홀란드](./assets/eh.jpeg) // .은 현재 위치
 
 ```python
 def func():
